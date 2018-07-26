@@ -7,7 +7,11 @@ def reformat_languages(languages)
     #binding.pry
     val.each do |key2, val2|
       new_hash[key2] = val2
-      new_hash[key2][:style] = [styleName]
+      if new_hash.value?(key2)
+        new_hash[key2][:style] << styleName
+      else
+        new_hash[key2][:style] = [styleName]
+      end
       #binding.pry
     end
     #binding.pry
