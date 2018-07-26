@@ -8,6 +8,7 @@ def reformat_languages(languages)
     val.each do |key2, val2|
       new_hash[key2] = val2
       if new_hash.include?(key2)
+        binding.pry
         new_hash[key2][:style] << styleName
         binding.pry
       else
