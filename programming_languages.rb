@@ -7,4 +7,5 @@ def reformat_languages(languages)
       new_hash[style: styleName]
     end
   end
+  return new_hash
 end
