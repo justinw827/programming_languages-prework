@@ -7,7 +7,7 @@ def reformat_languages(languages)
     temp = styleName
     val.each do |key2, val2|
       new_hash[key2] = val2
-      new_hash[style: styleName]
+      new_hash[style:] = styleName
     end
   end
   temp
