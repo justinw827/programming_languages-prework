@@ -1,5 +1,5 @@
 def reformat_languages(languages)
-  temp
+  temp = ''
 
   new_hash = Hash.new
   languages.each do |key, val|
